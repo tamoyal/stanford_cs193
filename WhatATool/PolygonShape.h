@@ -29,4 +29,7 @@
 - (float) angleInRadians;
 - (NSString*) name;
 
+- (id)initWithNumberOfSides:(int)sides minimumNumberOfSides:(int)min maximumNumberOfSides:(int)max;
+- (NSString *)description;
+
 @end

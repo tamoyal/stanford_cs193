@@ -11,10 +11,10 @@ void section_start(int);
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	
-//	section1();
-//	section2();
-//	section3();
-//	section4();
+	section1();
+	section2();
+	section3();
+	section4();
 	PrintPolygonInfo();
 	
     [pool drain];
@@ -22,12 +22,27 @@ int main (int argc, const char * argv[]) {
 }
 
 void PrintPolygonInfo(){
-	PolygonShape *p = [[PolygonShape alloc] init];
-	[p setMinimumNumberOfSides:3];
-//	[p setMaximumNumberOfSides:10];
-//	[p setNumberOfSides:11];
+	NSMutableArray *a = [[NSMutableArray alloc] init];
 	
-	[p release];
+	PolygonShape *p1 = [[PolygonShape alloc] initWithNumberOfSides:4 minimumNumberOfSides:3 maximumNumberOfSides:7];
+	[a addObject:p1];
+	NSLog([p1 description]);
+	
+	PolygonShape *p2 = [[PolygonShape alloc] initWithNumberOfSides:6 minimumNumberOfSides:5 maximumNumberOfSides:9];
+	[a addObject:p2];
+	NSLog([p2 description]);
+	
+	PolygonShape *p3 = [[PolygonShape alloc] init];
+	[p3 setMaximumNumberOfSides:12];
+	[p3 setMinimumNumberOfSides:9];
+	[p3 setNumberOfSides:12];
+	[a addObject:p3];
+	NSLog([p3 description]);
+	
+	[p1 release];
+	[p2 release];
+	[p3 release];
+	[a release];
 }
 
 void section1(){

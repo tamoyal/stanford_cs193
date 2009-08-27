@@ -15,15 +15,22 @@
 @synthesize minimumNumberOfSides;
 @synthesize maximumNumberOfSides;
 
--(id)init{
+- (id)initWithNumberOfSides:(int)sides minimumNumberOfSides:(int)min maximumNumberOfSides:(int)max{
 	if (self = [super init]){
-		//numberOfSides = 5;
-		[self setNumberOfSides:5];
-		[self setMinimumNumberOfSides:3];
-		[self setMaximumNumberOfSides:11];
+		[self setMinimumNumberOfSides:min];
+		[self setMaximumNumberOfSides:max];
+		[self setNumberOfSides:sides];
 	}
-	
 	return self;
+}
+
+- (id)init{
+	return [self initWithNumberOfSides:5 minimumNumberOfSides:3 maximumNumberOfSides:12];
+}
+
+- (void)dealloc {
+	NSLog(@"Dealloc is being called on a Polygon object.");
+	[super dealloc];
 }
 
 -(void) setNumberOfSides: (int)n{
@@ -51,15 +58,32 @@
 }
 
 -(float) angleInDegrees {
-    return [self angleInDegrees];
+    return (180 * (numberOfSides - 2)) / numberOfSides;
 }
 
 -(float) angleInRadians {
-    return [self angleInRadians];
+    return [self angleInDegrees] * (M_PI / 180);
 }
 
 -(NSString*) name {
-    return [self name];
+	NSDictionary *d = [NSDictionary dictionaryWithObjectsAndKeys:
+						  @"Triangle",		[NSNumber numberWithInt:3],
+						  @"Square",		[NSNumber numberWithInt:4],
+						  @"Pentagon",		[NSNumber numberWithInt:5],
+						  @"Hexagon",		[NSNumber numberWithInt:6],
+						  @"Heptagon",		[NSNumber numberWithInt:7],
+						  @"Octagon",		[NSNumber numberWithInt:8],
+						  @"Nonagon",		[NSNumber numberWithInt:9],
+						  @"Decagon",		[NSNumber numberWithInt:10],
+						  @"Undecagon",		[NSNumber numberWithInt:11],
+						  @"Dodecagon",		[NSNumber numberWithInt:12],
+						  nil];
+	
+    return [d objectForKey:[NSNumber numberWithInt:numberOfSides]];
+}
+
+- (NSString*)description {
+	return [NSString stringWithFormat: @"Hello, I am a %d-sided polygon (aka a %@) with angles of %.2f degrees (%.4f radians).", numberOfSides, [self name], [self angleInDegrees], [self angleInRadians]];
 }
 
 
