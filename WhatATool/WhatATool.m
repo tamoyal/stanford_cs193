@@ -1,21 +1,33 @@
 #import <Foundation/Foundation.h>
+#import "PolygonShape.h"
 
 void section1();
 void section2();
 void section3();
 void section4();
+void PrintPolygonInfo();
 void section_start(int);
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	
-	section1();
-	section2();
-	section3();
-	section4();
+//	section1();
+//	section2();
+//	section3();
+//	section4();
+	PrintPolygonInfo();
 	
     [pool drain];
     return 0;
+}
+
+void PrintPolygonInfo(){
+	PolygonShape *p = [[PolygonShape alloc] init];
+	[p setMinimumNumberOfSides:3];
+//	[p setMaximumNumberOfSides:10];
+//	[p setNumberOfSides:11];
+	
+	[p release];
 }
 
 void section1(){

@@ -4,6 +4,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 679D32FB1046F81100CB3D21 /* WhatATool */;
 		activeTarget = 8DD76F960486AA7600D96B5E /* WhatATool */;
+		addToTargets = (
+			8DD76F960486AA7600D96B5E /* WhatATool */,
+		);
 		codeSenseManager = 679D33001046F83100CB3D21 /* Code sense */;
 		executables = (
 			679D32FB1046F81100CB3D21 /* WhatATool */,
@@ -14,6 +17,13 @@
 		};
 		sourceControlManager = 679D32FF1046F83100CB3D21 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* WhatATool.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {840, 1876}}";
+			sepNavSelRange = "{399, 0}";
+			sepNavVisRange = "{153, 729}";
 		};
 	};
 	679D32FB1046F81100CB3D21 /* WhatATool */ = {
