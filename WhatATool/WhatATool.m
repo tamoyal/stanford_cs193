@@ -39,6 +39,10 @@ void PrintPolygonInfo(){
 	[a addObject:p3];
 	NSLog([p3 description]);
 	
+	for(PolygonShape *p in a){
+		[p setNumberOfSides:10];
+	}
+	
 	[p1 release];
 	[p2 release];
 	[p3 release];
