@@ -25,9 +25,6 @@
 - (void) setNumberOfSides: (int)n;
 - (void) setMinimumNumberOfSides: (int)min;
 - (void) setMaximumNumberOfSides: (int)max;
-- (float) angleInDegrees;
-- (float) angleInRadians;
-- (NSString*) name;
 
 - (id)initWithNumberOfSides:(int)sides minimumNumberOfSides:(int)min maximumNumberOfSides:(int)max;
 - (NSString *)description;
