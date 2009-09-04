@@ -33,7 +33,7 @@
 	[super dealloc];
 }
 
--(void) setNumberOfSides: (int)n{
+- (void)setNumberOfSides: (int)n{
 	if ( (n >= minimumNumberOfSides)&&(n <= maximumNumberOfSides) ){
 		numberOfSides = n;
 	}else{
@@ -41,7 +41,7 @@
 	}
 }
 
--(void) setMinimumNumberOfSides: (int)min{
+- (void)setMinimumNumberOfSides: (int)min{
 	if ( min > 2 ){
 		minimumNumberOfSides = min;
 	}else{
@@ -49,7 +49,7 @@
 	}
 }
 
--(void) setMaximumNumberOfSides: (int)max{
+- (void)setMaximumNumberOfSides: (int)max{
 	if ( max <= 12 ){
 		maximumNumberOfSides = max;
 	}else{
@@ -57,15 +57,15 @@
 	}
 }
 
--(float) angleInDegrees {
+- (float)angleInDegrees {
     return (180 * (numberOfSides - 2)) / numberOfSides;
 }
 
--(float) angleInRadians {
+- (float)angleInRadians {
     return [self angleInDegrees] * (M_PI / 180);
 }
 
--(NSString*) name {
+- (NSString*)name {
 	NSDictionary *d = [NSDictionary dictionaryWithObjectsAndKeys:
 						  @"Triangle",		[NSNumber numberWithInt:3],
 						  @"Square",		[NSNumber numberWithInt:4],
