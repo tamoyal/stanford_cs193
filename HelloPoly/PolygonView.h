@@ -10,7 +10,7 @@
 #import "PolygonShape.h"
 
 @interface PolygonView : UIView {
-	int currentSides;
+	IBOutlet PolygonShape *myPolygon;
 }
 
 - (void)drawPolygon: (int)sides;

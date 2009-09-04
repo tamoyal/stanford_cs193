@@ -8,7 +8,6 @@
 
 #import "PolygonView.h"
 
-
 @implementation PolygonView
 
 - (void)updateInterface {
@@ -26,10 +25,10 @@
 	[[UIColor blackColor] set];
 	UIRectFrame ([self bounds]);
 	
-	if( currentSides ){
+	if( [myPolygon numberOfSides] ){
 		CGContextBeginPath (context);
-		
-		NSArray *points = [PolygonView pointsForPolygonInRect:[self bounds] numberOfSides:currentSides];
+		NSLog(@"Drawing the PolygonView! My polygon has %d sides.", [myPolygon numberOfSides]);
+		NSArray *points = [PolygonView pointsForPolygonInRect:[self bounds] numberOfSides:[myPolygon numberOfSides]];
 		
 		int first = 1;
 		for(NSValue *v in points){
@@ -52,7 +51,6 @@
 }
 
 - (void)drawPolygon: (int)sides{
-	currentSides = sides;
 	[self updateInterface];
 }
 

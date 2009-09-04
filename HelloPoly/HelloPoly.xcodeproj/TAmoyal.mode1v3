@@ -269,7 +269,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -311,7 +311,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Controller.m</string>
+								<string>PolygonView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -319,23 +319,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Controller.m</string>
+										<string>PolygonView.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>679D360E1050BAB000CB3D21</string>
+										<string>679D36481050D0E200CB3D21</string>
 										<key>history</key>
 										<array>
 											<string>679D34701050906C00CB3D21</string>
 											<string>679D34721050906C00CB3D21</string>
 											<string>679D34731050906C00CB3D21</string>
 											<string>679D34741050906C00CB3D21</string>
-											<string>679D35FB1050B9A300CB3D21</string>
-											<string>679D35FC1050B9A300CB3D21</string>
-											<string>679D36061050BAB000CB3D21</string>
-											<string>679D36071050BAB000CB3D21</string>
-											<string>679D36081050BAB000CB3D21</string>
-											<string>679D36091050BAB000CB3D21</string>
+											<string>679D36131050C25600CB3D21</string>
+											<string>679D36141050C25600CB3D21</string>
+											<string>679D36161050C25600CB3D21</string>
+											<string>679D36171050C25600CB3D21</string>
+											<string>679D36441050D0E200CB3D21</string>
+											<string>679D36451050D0E200CB3D21</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -570,6 +570,24 @@
 											<string>679D360B1050BAB000CB3D21</string>
 											<string>679D360C1050BAB000CB3D21</string>
 											<string>679D360D1050BAB000CB3D21</string>
+											<string>679D36191050C25600CB3D21</string>
+											<string>679D361A1050C25600CB3D21</string>
+											<string>679D361B1050C25600CB3D21</string>
+											<string>679D361C1050C25600CB3D21</string>
+											<string>679D361D1050C25600CB3D21</string>
+											<string>679D361E1050C25600CB3D21</string>
+											<string>679D361F1050C25600CB3D21</string>
+											<string>679D36201050C25600CB3D21</string>
+											<string>679D36211050C25600CB3D21</string>
+											<string>679D36221050C25600CB3D21</string>
+											<string>679D36231050C25600CB3D21</string>
+											<string>679D36241050C25600CB3D21</string>
+											<string>679D36251050C25600CB3D21</string>
+											<string>679D362D1050C2CD00CB3D21</string>
+											<string>679D36321050C2E900CB3D21</string>
+											<string>679D36371050C32400CB3D21</string>
+											<string>679D36461050D0E200CB3D21</string>
+											<string>679D36471050D0E200CB3D21</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -767,8 +785,8 @@
 		<string>679D35081050906C00CB3D21</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>679D34241047747500CB3D21</string>
-		<string>/Users/TAmoyal/Desktop/Projects/CS193P/HelloPoly/HelloPoly.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/TAmoyal/Desktop/Projects/CS193P/HelloPoly/HelloPoly.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>40 79 1086 691 0 0 1280 778 </string>
@@ -1117,7 +1135,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>7 181 650 250 0 0 1280 778 </string>
+								<string>33 175 650 250 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1146,7 +1164,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>7 181 650 250 0 0 1280 778 </string>
+			<string>33 175 650 250 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
