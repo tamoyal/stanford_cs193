@@ -1,0 +1,128 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* PresenceAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {730, 425}}";
+			sepNavSelRange = "{364, 0}";
+			sepNavVisRange = "{0, 463}";
+			sepNavWindowFrame = "{{15, 40}, {1050, 733}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* PresenceAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {798, 574}}";
+			sepNavSelRange = "{659, 0}";
+			sepNavVisRange = "{42, 963}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Presence */ = {
+		activeExec = 0;
+		executables = (
+			67FC5AF71061DDF9002CD1FA /* Presence */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 67FC5AF71061DDF9002CD1FA /* Presence */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Presence */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Presence */,
+		);
+		codeSenseManager = 67FC5B041061DE00002CD1FA /* Code sense */;
+		executables = (
+			67FC5AF71061DDF9002CD1FA /* Presence */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 274849273;
+			PBXWorkspaceStateSaveDate = 274849273;
+		};
+		sourceControlManager = 67FC5B031061DE00002CD1FA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	67FC5AF71061DDF9002CD1FA /* Presence */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Presence;
+		sourceDirectories = (
+		);
+	};
+	67FC5B031061DE00002CD1FA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	67FC5B041061DE00002CD1FA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	67FC5B0F1061E880002CD1FA /* PersonListViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {730, 425}}";
+			sepNavSelRange = "{337, 0}";
+			sepNavVisRange = "{0, 527}";
+		};
+	};
+	67FC5B101061E880002CD1FA /* PersonListViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 966}}";
+			sepNavSelRange = "{742, 0}";
+			sepNavVisRange = "{174, 855}";
+		};
+	};
+	67FC5B3A1062A51B002CD1FA /* PersonViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {730, 425}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 258}";
+		};
+	};
+	67FC5B3B1062A51B002CD1FA /* PersonViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 882}}";
+			sepNavSelRange = "{625, 0}";
+			sepNavVisRange = "{0, 865}";
+		};
+	};
+}
