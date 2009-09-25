@@ -25,12 +25,6 @@
 	
     // Override point for customization after application launch
     [window makeKeyAndVisible];
-	
-	//[plvc initWithNibName:@"PersonList" bundle:[NSBundle mainBundle]];
-	//[navController pushViewController:plvc animated:NO];
-	
-	//[navController pushViewController:firstViewController animated:NO];
-	
 }
 
 

@@ -12,6 +12,7 @@
 @synthesize fullName;
 @synthesize status;
 @synthesize avatar;
+@synthesize person;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 //- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -31,6 +32,13 @@
 		self.avatar = avatarIn;
     }
     return self;
+}
+
+- (id)initWithPerson:(Person *)personIn{
+	if (self = [self initWithNibName:@"Person" bundle:nil]) {
+		self.person = personIn;
+	}
+	return self;
 }
 
 /*

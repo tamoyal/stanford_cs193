@@ -21,6 +21,8 @@
 	IBOutlet UILabel *l1;
 	IBOutlet UILabel *l2;
 	IBOutlet UILabel *l3;
+	
+	NSArray *peopleList;
 }
 
 - (IBAction)viewPerson:(id)sender;

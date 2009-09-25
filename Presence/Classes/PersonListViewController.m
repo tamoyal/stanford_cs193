@@ -8,6 +8,8 @@
 
 #import "PersonListViewController.h"
 #import "PersonViewController.h"
+#import "Person.h"
+#import "TwitterHelper.h"
 
 @implementation PersonListViewController
 
@@ -86,10 +88,15 @@
 	//UIImage *i1 = [UIImage imageNamed:@"joe_hiya.jpg"];
 	//UIImage *i2 = [UIImage imageWithContentsOfFile:@"/Users/TAmoyal/Desktop/Projects/stanford_cs193/Presence/me_and_bird.jpg"];
 	//UIImage *i3 = [UIImage imageWithContentsOfFile:@"/Users/TAmoyal/Desktop/Projects/stanford_cs193/Presence/me_and_nicole.jpg"];
-	//[a1 initWithImage:i1];
-	//[a2 initWithImage:i2];
-	//[a3 initWithImage:i3];
-	//a1.image = i1;
+	
+	NSString *path = [[NSBundle mainBundle] pathForResource:@"TwitterUsers" ofType:@"plist"];
+	NSArray *twitterUsers = [NSArray arrayWithContentsOfFile:path];
+	
+	Person *person;
+	for(NSValue *t in twitterUsers){
+		person = [[Person alloc] initWithTwitterUsername:(NSString *)t];
+	}
+	[person release];
 }
 
 - (void)addPerson:(id)sender {
